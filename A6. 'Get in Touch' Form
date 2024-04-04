@@ -1,0 +1,47 @@
+ A6. 'Get in Touch' Form
+
+QUESTION ----------->
+
+Raw Problem
+Create the ‘Get in Touch’ Form for your portfolio which should include the following:
+
+1. Name input section (an input of text type)
+
+2. Email input section (an input of email type)
+
+3. Message input section (a textarea)
+
+4. and a submit button (an input of submit type)
+
+Further, refer to the test cases to understand necessary requirements to submit the problem.
+
+SOLUTION ----------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'Get in Touch' Form</title>
+</head>
+<body>
+    <section>
+        <h1>Get in Touch</h1>
+        <form>
+            <label> Name
+                <input type="text" name="name" />
+            </label>
+            <br />
+            <label> Email 
+                <input type="email" name="email" />
+            </label>
+            <br />
+            <label> Message  
+                <textarea name="message" ></textarea>
+            </label>
+            <br />
+            <input type="submit" name="submit" value="Submit" />
+        </form>
+    </section>
+</body>
+</html>
