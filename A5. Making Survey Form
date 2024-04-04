@@ -1,0 +1,73 @@
+A2. Making Survey Form
+
+QUESTION ------------>
+
+Raw Problem
+Create an HTML form for a survey to collect information about the favourite food of people.
+
+The survey should include the following fields:
+Name (text input)
+Age (number input)
+Gender (radio buttons with Male and Female options)
+Favorite Food (drop-down list with options like Pizza, Chinese food, Indian food, etc.)
+Do you like to cook? (checkbox with Yes/No options)
+Additional comments (textarea input)
+Submit button
+
+Further, refer to the test cases to understand necessary requirements to submit the problem.
+
+
+SOLUTION ------------>
+
+<!DOCTYPE html>
+<!-- Please NOTE that the link to assets (like images) need to be set in global context.
+For example:
+To access an image from assets folder correct way to set src attribute is 
+
+src = 'profile.png'
+
+instead of 
+
+src = './assets/profile.png'
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Survey Form</h1>
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+
+    <label for="gender">Gender:
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+    </label>
+
+    <label for="food">Favorite Food:</label>
+    <select id="food" name="food" required>
+        <option value="pizza">Pizza</option>
+        <option value="chinese">Chinese food</option>
+        <option value="indian">Indian food</option>
+        <option value="mexican">Mexican food</option>
+    </select>
+
+    <label for="cook">Do you like to cook?</label>
+    <input type="checkbox" id="cook" name="cook">
+    <label for="cook">Yes</label>
+
+    <label for="comments">Additional comments:</label>
+    <textarea id="comments" name="comments"></textarea>
+
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
