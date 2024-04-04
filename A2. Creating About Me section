@@ -1,0 +1,54 @@
+A2. Creating About Me section
+
+QUESTION ----------->
+
+Raw Problem
+Create an About me Section that contains the person's image, necessary heading, intro, description, and social profile links.
+
+Use the following tags in proper flow:
+1. <section> tag, to hold the entire about me section.
+2. <img> tag with relevant src and alt attribute to add a image.
+3. <h1> and <h3> tag for section heading and person's intro.
+4. <p> tag for a long description.
+5. <a> tags with enclosed <img> tags to have logos (images) of different social profiles as redirectable links.
+
+Further, refer to the test cases to understand necessary requirements to submit the problem.
+
+
+SOLUTION ----------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Please NOTE that the link to assets (like images) need to be set in global context.
+For example:
+To access an image from assets folder correct way to set src attribute is 
+
+src = 'profile.png'
+
+instead of 
+
+src = './assets/profile.png'
+-->
+<body>
+    <section>
+        <img src = "profile-img.jpg" alt="person-img"/">
+        <div>
+            <h1>About Me</h1>
+        </div>
+        <div>
+            <h3>Hello! I'm <span>{PERSON_NAME}</span><h3>
+        </div>
+        <div>
+            <p>Description Area for About me
+        </div>
+        <a href="#" src="www.facebook.com"><img src="profile.png" alt="logo1"></a>
+        <a href="#" src="www.linkedin.com"><img src="profile.png" alt="logo2"></a>
+        <a href="#" src="www.instagram.com"><img src="profile.png" alt="logo3"></a>
+        <a href="#" src="www.googleprofile.com"><img src="profile.png" alt="logo4"></a>
+    </section>
+</body>
